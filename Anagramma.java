@@ -21,19 +21,18 @@ public class Anagramma {
 		return compile(toCompile,matrixResLength,inputLength);
 		
 	}
-	public static char[][] compile(char[] daCompilare , int matrixLength,int rowLength){
+	public static char[][] compile(char[] toCompile , int matrixLength,int rowLength){
 		char[][] resultMatrix = new char[matrixLength][rowLength];
 		if (rowLength == 4) {
 			return assembler(
 						threeLettersCompile(
 								new char[]{
-										daCompilare[1],
-										daCompilare[2],
-										daCompilare[3]}),
-						daCompilare[0],
+										toCompile[1],
+										toCompile[2],
+										toCompile[3]}),
+						toCompile[0],
 						resultMatrix);
 		}
-		
 		
 		
 		return assembler(start(subArray(daCompilare)) , daCompilare[0] , resultMatrix );
