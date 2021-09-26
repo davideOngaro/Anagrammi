@@ -11,16 +11,9 @@ public class Anagramma {
 		long start = System.currentTimeMillis();  
 		char[][] prova = start(lettere.toCharArray());
 		long time = System.currentTimeMillis() - start; 
-		/*start = System.currentTimeMillis();
-		System.out.println(prova.length);
-			for(int i = 0; i< prova.length ; i++) {
-				System.out.println(prova[i]);
-			}
-		long time2 = System.currentTimeMillis() - start;
-		*/ 
-		System.out.println();
-	System.out.println("runtime per "+ prova.length + " risultati è di " + time+" millis");
-	//System.out.println("Tempo di stampa :"+time2+" millis");
+		
+	System.out.println("runtime for "+ prova.length + " results is " + time+" millis");
+	
 	}
 	public static char[][] start(char[] toCompile) {
 		int inputLength = toCompile.length;
