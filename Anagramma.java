@@ -4,7 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 //This Code is very fast, lets try it.
 
-//you cannot insert more then 12 characters or it full off heap memor
+//you cannot insert more then 12 characters or it full off heap memory
 public class Anagramma {
 	public static void main(String[] args) {
 		String lettere = "abcdefghijk";
