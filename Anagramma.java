@@ -2,7 +2,9 @@ package anagramma;
 
 import java.util.HashSet;
 import java.util.Set;
+//This Code is very fast, lets try it.
 
+//you cannot insert more then 12 characters or it full off heap memor
 public class Anagramma {
 	public static void main(String[] args) {
 		String lettere = "abcdefghijk";
@@ -17,7 +19,7 @@ public class Anagramma {
 		long time2 = System.currentTimeMillis() - start;
 		*/ 
 		System.out.println();
-	System.out.println("runtime per "+ prova.length + " risultati è di " + time+" millis");
+	System.out.println("runtime per "+ prova.length + " risultati Ã¨ di " + time+" millis");
 	//System.out.println("Tempo di stampa :"+time2+" millis");
 	}
 	public static char[][] start(char[] toCompile) {
